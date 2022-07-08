@@ -1,4 +1,5 @@
 
+
 function INCOME(){
     let countnum
     document.getElementById("display").innerHTML;

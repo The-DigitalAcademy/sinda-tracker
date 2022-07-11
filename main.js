@@ -58,8 +58,8 @@ function addTransaction(name, amount, type) {
         alert('Please enter valid data')
     }
 
-nameInputEl.value = '';
-amountInputEl.value = '';
+nameInputEl.value = '#Income';
+amountInputEl.value = '#Expense';
 }
 
 function onAddIncomeClick() {

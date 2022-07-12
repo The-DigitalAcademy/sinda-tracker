@@ -11,7 +11,7 @@ const fetchPlayers = async (gamertag, platform) => {
         }
     });
 
-    const data = await api_call.json();
+    const data = await api_call.button();
     return { data }
 };
 

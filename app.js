@@ -5,7 +5,7 @@ var platformInput = document.getElementById('platform');
 var result = document.querySelector('.result');
 
 const fetchPlayers = async (gamertag, platform) => {
-    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnitetracker.com/v1/profile/${platform}/${gamertag}`, {
+    const api_call = await fetch(`https:// api.fortnitetracker.com/v1/profile/${platform}/${gamertag}`, {
         headers: {
             'TRN-Api-Key': 'b3cdd27a-0b0a-4b51-9114-8bb2834cb715'
         }
@@ -24,19 +24,19 @@ const showData = () => {
                     <div class="col-md-4 mb-3">
                         <div class="stat">
                             <h5>${res.data.lifeTimeStats[8].value}</h5>
-                            <h6>Wins</h6>
+                            <h6>Income</h6>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="stat">
                             <h5>${res.data.lifeTimeStats[10].value}</h5>
-                            <h6>Kills</h6>
+                            <h6>expense</h6>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="stat">
                             <h5>${res.data.lifeTimeStats[7].value}</h5>
-                            <h6>Matches Played</h6>
+                            <h6>Expense</h6>
                         </div>
                     </div>
                 </div>

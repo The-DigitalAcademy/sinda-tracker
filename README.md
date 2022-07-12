@@ -1,3 +1,3 @@
 # tracker-new
 # sinda-tracker
-[link](https://the-digitalacademy.github.io/sinda-tracker/gir)
+[Link](https://the-digitalacademy.github.io/sinda-tracker/)

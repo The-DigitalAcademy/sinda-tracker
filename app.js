@@ -19,7 +19,7 @@ const showData = () => {
     fetchPlayers(gamertagInput.value, platformInput.value).then((res) => {
         const markup = `
             <div class="stats text-center">
-                <h1>${res.data.epicUserHandle} (${res.data.platformNameLong})</h1>
+                <h1>${res.data.epicUserHandle}(${res.data.platformNameLong})</h1>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="stat">
@@ -36,7 +36,7 @@ const showData = () => {
                     <div class="col-md-4 mb-3">
                         <div class="stat">
                             <h5>${res.data.lifeTimeStats[7].value}</h5>
-                            <h6>Expense</h6>
+                            <h6>Income</h6>
                         </div>
                     </div>
                 </div>

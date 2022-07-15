@@ -48,7 +48,7 @@ const showData = () => {
 };
 
 const clearField = () => {
-    moneyInput.value = '';
+    Input.value = '';
     platformInput.value = 'Choose Platform';
 };
 

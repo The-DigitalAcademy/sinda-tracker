@@ -1,11 +1,11 @@
 
 var submitBtn = document.getElementById('submit');
-var gamertagInput = document.getElementById('gamertag');
+var moneyInput = document.getElementById('money');
 var platformInput = document.getElementById('platform');
 var result = document.querySelector('.result');
 
-const fetchPlayers = async (gamertag, platform) => {
-    const api_call = await fetch(`https:// api.fortnitetracker.com/v1/profile/${platform}/${gamertag}`, {
+const fetchPlayers = async (money, platform) => {
+    const api_call = await fetch(`https:// api.fortnitetracker.com/v1/profile/${platform}/${money}`, {
         headers: {
             'TRN-Api-Key': 'b3cdd27a-0b0a-4b51-9114-8bb2834cb715'
         }
@@ -16,7 +16,7 @@ const fetchPlayers = async (gamertag, platform) => {
 };
 
 const showData = () => {
-    fetchPlayers(gamertagInput.value, platformInput.value).then((res) => {
+    fetchPlayers(moneyInput.value, platformInput.value).then((res) => {
         const markup = `
             <div class="stats text-center">
                 <h1>${res.data.epicUserHandle}(${res.data.platformNameLong})</h1>
@@ -48,7 +48,7 @@ const showData = () => {
 };
 
 const clearField = () => {
-    gamertagInput.value = '';
+    moneyInput.value = '';
     platformInput.value = 'Choose Platform';
 };
 

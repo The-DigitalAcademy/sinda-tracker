@@ -29,13 +29,14 @@
     font-size: 1em;
     cursor: pointer;
     outline: none;
-    background: #7868e6;
+    background: #06ade0;
     color: white;
     margin: 0.2em 0;
     padding: 0 1em;
     border-radius: 10px;
     border: none;
   }
+  
   input{
     width: 95%;
     height: 40px;

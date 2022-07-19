@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>BMI Calculator</title>
+		<title>sinda tracker</title>
 	</head>
 	<style media="screen">
 		body{
@@ -18,11 +18,11 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			background-color: #fff;
+			background-color: rgb(177, 174, 174);
 			transform: translate(-50%, -50%);
 			padding: 20px;
 			border-radius: 10px;
-			box-shadow: 1px 1px 20px #6f6e6e;
+			box-shadow: 1px 1px 20px #151414;
 		}
 		h2{
 			font-size: 30px;
@@ -44,19 +44,19 @@
 			width: 200px;
 		}
 			#w:focus, #h:focus{
-				border-bottom: 2px solid #341f97;
+				border-bottom: 2px solid #1f9797;
 				width: 300px;
 				transition: 0.5s;
 			}
 			#result{
-				color: #341f97;
+				color:black;
 			}
 			#btn{
 				font-family: inherit;
 				margin-top: 10px;
 				border: none;
-				color: #fff;
-				background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+				color: rgb(12, 12, 12);
+				background-image: linear-gradient(120deg,#f5f0f0, #5f27cd);
 				width: 150px;
 				padding: 10px;
 				border-radius: 30px;
@@ -64,7 +64,7 @@
 				cursor: pointer;
 			}
 			#btn:hover{
-				box-shadow: 1px 1px 10px #341f97;
+				box-shadow: 1px 1px 10px #f5f4f9;
 			}
 			#info{
 				font-size: 12px;
@@ -78,15 +78,15 @@
 			var bmi=w/(h/100*h/100);
 			var bmio=(bmi.toFixed(2));
 
-			document.getElementById("result").innerHTML="TOTAL:R " + bmio;
+			document.getElementById("result").innerHTML="TOTAL:R "+ bmio;
 		}
 	</script>
 	<body>
 		<div>
 			<h2>EXPENSE TRACKER</h2>
-			<p class="text">Expense</p>
+			<p class="text">-Expense</p>
 			<input type="text" id="h">
-			<p class="text">Inocme</p>
+			<p class="text">+Inocme</p>
 			<input type="text" id="w">
 			<p id="result"></p>
 			<button id="btn" onClick="BMI()">Submit</button>

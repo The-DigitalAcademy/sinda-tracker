@@ -75,7 +75,7 @@
 		function BMI() {
 			var h=document.getElementById('h').value;
 			var w=document.getElementById('w').value;
-			var bmi=w/(h/100*h/100);
+			var bmi=w/(h/10*h/10);
 			var bmio=(bmi.toFixed(2));
 
 			document.getElementById("result").innerHTML="TOTAL:R "+ bmio;
@@ -89,7 +89,8 @@
 			<p class="text">+Inocme</p>
 			<input type="text" id="w">
 			<p id="result"></p>
-			<button id="btn" onClick="BMI()">Submit</button>
+            <button id="btn" onClick="BMI()">+expense</button><button id="btn" onClick="BMI()">-income</button>
+            <br>
 		</div>
 	</body>
 </html>

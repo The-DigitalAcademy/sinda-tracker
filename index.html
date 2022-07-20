@@ -75,8 +75,8 @@
 		function BMI() {
 			var h=document.getElementById('h').value;
 			var w=document.getElementById('w').value;
-			var bmi=w/(h/10*h/10);
-			var bmio=(bmi.toFixed(2));
+			var bmi=w/(h/100*h/100);
+			var bmio=(bmi.toFixed(0));
 
 			document.getElementById("result").innerHTML="TOTAL:R "+ bmio;
 		}

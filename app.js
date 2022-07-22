@@ -45,3 +45,18 @@ const fetchPlayers = async (gamertag, platform) => {
         })
             .catch(err => console.log(err));
     };
+
+    const clearField = () => {
+        gamertagInput.value = '';
+        platformInput.value = 'Choose Platform';
+    };
+    
+    const clearPlayer = () => {
+        result.innerHTML = '';
+    }
+    
+    submitBtn.addEventListener('click', function () {
+        showData();
+        clearField();
+        clearPlayer();
+    });

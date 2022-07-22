@@ -10,6 +10,10 @@ const fetchPlayers = async (gamertag, platform) => {
         }
     });
 
+    const data = await api_call.json();
+    return { data }
+};
+
     const showData = () => {
         fetchPlayers(gamertagInput.value, platformInput.value).then((res) => {
             const markup = `

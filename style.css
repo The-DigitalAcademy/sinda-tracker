@@ -38,18 +38,18 @@ select {
 }
 
 .btn-primary {
-    background: #ffff01 !important;
+    background: #01e1ff !important;
     color: #000 !important;
     border-radius: 2em;
     width: 100%;
-    border: 1px solid #ffff01 !important;
+    border: 1px solid #161717 !important;
     font-size: 20px;
     font-weight: bold;
 }
 
 .btn-primary:hover {
     background: transparent !important;
-    color: #ffff01 !important;
+    color: #0e0f0f !important;
 }
 
 .stats {

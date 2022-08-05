@@ -5,19 +5,19 @@
 
 body{
     background:#f8f9fb;
-    color:#77D9AB;
+    color:#0a0a0a;
 }
 
 .title{
     width: 500px;
-    color:#0869A6;
+    color:#0b0b0b;
     margin:3% auto;
 }
 
 .content{
     width: 580px;
     margin: 0 auto;
-    background-color:#0869A6;
+    background-color:gray;
     padding: 3%;
     padding-left: 6%;
 }
@@ -70,7 +70,7 @@ button{
     text-align: center;
     font-size: 1.1em;
     line-height: 20px;
-    background-color: #04BF8A;
+    background-color: #11b7f3;
     border-radius: 5px;
     margin: 14px 25%;
     cursor: pointer;

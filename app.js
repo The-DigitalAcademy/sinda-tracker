@@ -9,17 +9,17 @@ function addExpense(e){
     // get type, name, date, and amount
     let type = document.getElementById('type').value;
     let name = document.getElementById('name').value;
-    let date = document.getElementById('date').value;
+    let shop = document.getElementById('shop').value;
     let amount = document.getElementById('amount').value;
 
     if(type != 'chooseOne' 
         && name.length > 0 
-        && date != 0 
+        && shop != 0 
         && amount > 0){
         const expense = {
             type, 
             name, 
-            date,
+            shop,
             amount, 
             id: expenses.length > 0 ? expenses[expenses.length - 1].id + 1 : 1,
         }
@@ -44,9 +44,9 @@ const showExpenses = () => {
             <tr>
                 <td>${expenses[i].type}</td>
                 <td>${expenses[i].name}</td>
-                <td>${expenses[i].date}</td>
+                <td>${expenses[i].shop}</td>
                 <td>R${expenses[i].amount}</td>
-                <td><a class="deleteButton" onclick="deleteExpense(R${expenses[i].id})">
+                <td><a class="deleteButton" onclick="deleteExpense(${expenses[i].id})">
                     Delete</td>
             </tr>
         `;

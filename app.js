@@ -46,7 +46,7 @@ const showExpenses = () => {
                 <td>${expenses[i].name}</td>
                 <td>${expenses[i].date}</td>
                 <td>R${expenses[i].amount}</td>
-                <td><a class="deleteButton" onclick="deleteExpense(${expenses[i].id})">
+                <td><a class="deleteButton" onclick="deleteExpense(R${expenses[i].id})">
                     Delete</td>
             </tr>
         `;
